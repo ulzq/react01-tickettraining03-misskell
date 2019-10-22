@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dci_cannon_fudder/static/css/main.384dd5fa.chunk.css",
+    "main.js": "/dci_cannon_fudder/static/js/main.4899932b.chunk.js",
+    "main.js.map": "/dci_cannon_fudder/static/js/main.4899932b.chunk.js.map",
+    "runtime-main.js": "/dci_cannon_fudder/static/js/runtime-main.3b4f3a91.js",
+    "runtime-main.js.map": "/dci_cannon_fudder/static/js/runtime-main.3b4f3a91.js.map",
+    "static/js/2.d32fbb06.chunk.js": "/dci_cannon_fudder/static/js/2.d32fbb06.chunk.js",
+    "static/js/2.d32fbb06.chunk.js.map": "/dci_cannon_fudder/static/js/2.d32fbb06.chunk.js.map",
+    "index.html": "/dci_cannon_fudder/index.html",
+    "precache-manifest.054f1bc7970573f5f7aabf3b3b794903.js": "/dci_cannon_fudder/precache-manifest.054f1bc7970573f5f7aabf3b3b794903.js",
+    "service-worker.js": "/dci_cannon_fudder/service-worker.js",
+    "static/css/main.384dd5fa.chunk.css.map": "/dci_cannon_fudder/static/css/main.384dd5fa.chunk.css.map",
+    "static/media/logo.svg": "/dci_cannon_fudder/static/media/logo.f5d6e48b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b4f3a91.js",
+    "static/js/2.d32fbb06.chunk.js",
+    "static/css/main.384dd5fa.chunk.css",
+    "static/js/main.4899932b.chunk.js"
+  ]
+}
