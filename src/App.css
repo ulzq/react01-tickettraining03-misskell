@@ -41,7 +41,16 @@
   font-weight: bolder;
   border: solid 5px white;
 }
-
+.PowerLimit {
+  background: rosybrown;
+  margin: 1ch 10ch;
+  padding: 3ch;
+  color: white;
+  border-radius: 2ch;
+  font-size: 150%;
+  font-weight: bolder;
+  border: solid 5px white;
+}
 .Controls {
   position: fixed;
   left: 0;
