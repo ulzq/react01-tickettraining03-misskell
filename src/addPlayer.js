@@ -11,10 +11,10 @@ class AddPlayer extends React.Component {
 
   add = ()=> {
     if ( this.state.name.trim() === "" ){
-      this.props.controller.flashError("Please enter a user name");
+      this.props.controller.flashError("you forgot to put in a name");
       return; }
     if ( this.props.playerNames.includes(this.state.name) ){
-      this.props.controller.flashError("Name is taken, choose another one");
+      this.props.controller.flashError("WoOoHoOo!! Name is taken, try again plz!");
       return; }
     this.props.addPlayer(this.state.name)
     this.setState({name:""});
