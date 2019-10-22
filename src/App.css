@@ -1,0 +1,155 @@
+* {
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+#stage {
+  position: absolute;
+  z-index: -1;
+  top:0; left:0; bottom: 0; right: 0;
+}
+
+.ErrorBox {
+  background: #ff0000cc;
+  margin: 1ch 10ch;
+  padding: 3ch;
+  color: white;
+  border-radius: 2ch;
+  font-size: 150%;
+  font-weight: bolder;
+  border: solid 5px white;
+}
+
+.Controls {
+  position: fixed;
+  left: 0;
+  top:0;
+  text-align: left;
+}
+
+.Controls,
+.WaitingPlayer {
+  padding: 2ch;
+  border-radius: 1ch;
+  background: #ffffff66;
+  margin: 1ch;
+}
+
+.Controls span {
+  display: block;
+}
+
+.WaitingPlayer,
+.Settings input, .Settings button,
+.Controls input, .Controls button,
+.Controls label {
+  padding: 0.5ch;
+  border-radius: 1ch;
+  text-align: center;
+  margin-top: 0.5ch;
+  margin-bottom: 0.5ch;
+}
+
+.Controls label {
+  font-weight: bold;
+}
+
+.Settings {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  padding: 2ch;
+  border-radius: 2ch;
+  text-align: center;
+}
+
+.center-relative-h {
+  position: relative; left:50%; transform: translate(-50%);
+}
+
+.Controls label,
+.Settings input,
+.Settings button {
+  display: block;
+
+}
+
+.Controls input {
+  width: 5ch;
+}
+
+.Controls button {
+  width: 3ch;
+  margin-left: 0.5ch;
+}
+.Controls #fire {
+  width: unset;
+  margin: unset;
+  margin-top: 0.5em;
+  background: red;
+  font-weight: bold;
+  color: white;
+  float: right;
+  padding-left: 2ch;
+  padding-right: 2ch;
+}
+
+.WaitingPlayers {
+  position: absolute;
+  bottom: 1ch;
+}
+
+.WaitingPlayer {
+  width: 10ch;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1ch;
+}
+
+button, input {
+  box-shadow: black 0 0 3px;
+}
+
+button:focus, input:focus {
+  box-shadow: red 0 0 3px, red 0 0 3px, red 0 0 3px;
+  outline: none;
+}
+
+button, input {
+  border: solid 3px blue;
+  background: #6666ffba;
+  font-weight: bold;
+  color:white;
+}
+
+button.start {
+  background: #00f9;
+  font-weight: bolder;
+  padding: 1ch 3ch;
+  margin-top: 2ch;
+  color:white;
+}
