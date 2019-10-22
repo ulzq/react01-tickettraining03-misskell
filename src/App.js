@@ -51,6 +51,8 @@ import AddPlayer   from './addPlayer.js'
 import Waiting     from './waitingList.js'
 import Battlefield from './battlefield.js'
 import ErrorBox    from './errorBox.js'
+import Powerlimit  from './powerlimit.js'
+import powerLimit from './powerlimit.js';
 
 /*
   This function helps us get a random element from an Array.
@@ -208,10 +210,16 @@ class App extends React.Component {
 
   flashError = async (msg="Unknown Error") => {
     this.setState({errorMessage:msg});
-    await new Promise( (resolve)=> { setTimeout(resolve,2000) });
+    await new Promise( (resolve)=> { setTimeout(resolve,60000) });
     this.setState({errorMessage:null});
   }
 
+  fastLimit = async (msg="Unknown Error") => {
+    this.setState({powerLimit:msg});
+    await new Promise( (resolve)=> { setTimeout(resolve,2000) });
+    this.setState({powerLimit:null});
+  }
+  
   startGame = () => {
     if ( this.state.player.length < 2 ){
       this.flashError("This will be boring. Add at least 2 players.");
@@ -235,7 +243,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="Header"></div>
-        { this.state.errorMessage ? <ErrorBox message={this.state.errorMessage} /> : null }
+        { this.state.kickOff ? <powerLimit message={this.state.kickOff} /> : null }
+        { this.state.kickOff ? <powerLimit message={this.state.kickOff} /> : null }
+
         <Controls
           player={this.state.currentPlayer}
           turnLeft={this.turnLeft}
